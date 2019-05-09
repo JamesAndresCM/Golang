@@ -28,18 +28,18 @@ func append_slice(){
 
   slice_three := append(slice_one, 2,12)
   fmt.Println("Slice 3: ",slice_three)
-  
+
   for _,val := range slice_two {
     slice_one = append(slice_one,val)
   }
   fmt.Println(slice_one)
 
   var vals []int
-	for i := 0; i < 5; i++ {
-		vals = append(vals, i)
-		fmt.Println(len(vals))
-		fmt.Println(cap(vals))
-	}
+  for i := 0; i < 5; i++ {
+    vals = append(vals, i)
+    fmt.Println(len(vals))
+    fmt.Println(cap(vals))
+  }
   fmt.Println(vals)
 }
 
