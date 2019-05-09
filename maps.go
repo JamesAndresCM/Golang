@@ -12,6 +12,7 @@ func main(){
   delete(x,"a")
   fmt.Println(x)
   create_dynamic()
+  another_func()
 }
 
 func create_dynamic(){
@@ -22,4 +23,16 @@ func create_dynamic(){
     hash[value] = index
   }
   fmt.Println(hash)
+}
+
+func another_func(){
+  hash := make(map[string]int)
+  hash["a"] = 1
+  hash["b"] = 2
+  hash["c"] = 3
+  hash["d"] = 4
+
+  if name, ok := hash["a"]; ok {
+    fmt.Println(name, ok)
+  }
 }
